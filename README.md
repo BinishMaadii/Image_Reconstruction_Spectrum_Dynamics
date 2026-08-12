@@ -23,7 +23,7 @@ git clone [https://github.com/](https://github.com/)<your-username>/<your-repo-n
 cd <your-repo-name>
 pip install -r requirements.txt
 
-### Create a requirements.txt and write inside it
+## Create a requirements.txt and write inside it
 
 numpy>=1.22.0
 scipy>=1.9.0
@@ -47,6 +47,24 @@ python cardiac_spect_sim.py
 05_bullseye_scores.png — Stress/Rest segmental polar plots
 06_gated_function.png — ED/ES 2D ejection fraction analog
 07_dynamic_flow.png — Dynamic TACs & 1-compartment kinetic fits
+
+
+## Pipeline Summary Output
+============================================================
+CLINICAL-STYLE SUMMARY REPORT (simulated study)
+============================================================
+  Summed Stress Score (SSS):        4
+  Summed Rest Score (SRS):          0
+  Summed Difference Score (SDS):    4  (reversible ischemia)
+  Gated LVEF (2D analog):           70%
+  Rest MBF (fitted):                1.02 mL/min/g
+  Stress MBF (fitted):              2.68 mL/min/g
+  Myocardial Flow Reserve (MFR):    2.63
+============================================================
+
+## License
+MIT License
+
 
 
 
