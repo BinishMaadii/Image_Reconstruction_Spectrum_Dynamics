@@ -34,4 +34,19 @@ matplotlib>=3.5.0
 ## Usage
 Run the end-to-end pipeline:
 
+```bash
+python cardiac_spect_sim.py
+
+
+## Outputs are saved directly to ./outputs/:
+
+01_phantom.png — Ground truth slice
+02_acquisition_comparison.png — Dwell time profiles & sinograms
+03_motion_qc.png — COM motion tracking & flagged angles
+04_reconstruction_comparison.png — Ground truth vs. OSEM vs. OSEM+RR
+05_bullseye_scores.png — Stress/Rest segmental polar plots
+06_gated_function.png — ED/ES 2D ejection fraction analog
+07_dynamic_flow.png — Dynamic TACs & 1-compartment kinetic fits
+
+
 
