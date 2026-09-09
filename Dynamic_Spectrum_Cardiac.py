@@ -30,10 +30,12 @@ center = image_size /2
 
 ###3 In order to calculate the distance from the center of each pixel
 
-radius = np.sqrt((x-center) ** 2 + (y-center) ** 2) # sqrt(x^2 + y^2)
-center = image_size/2
-
+# $r(x, y) = \sqrt{(x - x_0)^2 + (y - y_0)^2}$
 radius = np.sqrt( (x-center) ** 2  +  (y - center) ** 2)
+
+# $\theta(x, y) = \left( \operatorname{arctan2}(y - y_0, x - x_0) \cdot \frac{180}{\pi} + 360 \right) \pmod{360}$
 angles_deg = (np.degrees (np.arctan2(y - center, x - center)) ** 2) 
+
+
 
 
