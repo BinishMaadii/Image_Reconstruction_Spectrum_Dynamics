@@ -28,4 +28,12 @@ image_size = 96
 x, y = np.mgrid[0:image_size, 0:image_size] # to secure the spots where image should be created
 center = image_size /2
 
+###3 In order to calculate the distance from the center of each pixel
+
+radius = np.sqrt((x-center) ** 2 + (y-center) ** 2) # sqrt(x^2 + y^2)
+center = image_size/2
+
+radius = np.sqrt( (x-center) ** 2  +  (y - center) ** 2)
+angles_deg = (np.degrees)
+
 
