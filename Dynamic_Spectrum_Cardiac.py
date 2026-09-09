@@ -22,3 +22,10 @@ def save_plot(fig, filename):
 
 
 ##### Generating the Phantom in 2D
+
+print("Step [1] Generating phantom")
+image_size = 96 
+x, y = np.mgrid[0:image_size, 0:image_size] # to secure the spots where image should be created
+center = image_size /2
+
+
