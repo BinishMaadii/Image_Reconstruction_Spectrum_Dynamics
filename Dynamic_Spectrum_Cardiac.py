@@ -34,6 +34,6 @@ radius = np.sqrt((x-center) ** 2 + (y-center) ** 2) # sqrt(x^2 + y^2)
 center = image_size/2
 
 radius = np.sqrt( (x-center) ** 2  +  (y - center) ** 2)
-angles_deg = (np.degrees)
+angles_deg = (np.degrees (np.arctan2(y - center, x - center)) ** 2) 
 
 
